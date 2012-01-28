@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Console</title>
 		<script type="text/javascript">
 			var sock;
@@ -174,11 +176,15 @@
 				font-family: monospace;
 				font-weight: bold;
 			}
+			#grid {
+				line-height: 1em;
+				background-color: black;
+				color: white;
+				display: inline-block;
+			}
 			#grid span {
 				font-family: monospace;
-				background-color: black;
 				white-space: pre;
-				color: white;
 			}
 			#grid span.cursor {
 				color: black;
@@ -188,6 +194,7 @@
 	</head>
 	<body onload="init()">
 		<div id="grid"></div>
+		<br>
 		<input type="button" value="Ctrl" onclick="modCtrl=true;"/>
 	</body>
 </html>
